@@ -1,0 +1,20 @@
+name: Check Clang Format
+
+on: push
+
+jobs:
+  # Runs clang-format, but does not apply formatting to source.
+  # Formatting violations emit errors, causing the job to fail.
+  clang-format:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install clang-format
+      run : |
+        sudo apt-get install clang-format
+    
+    - name: Run clang-format
+      run: |
+        ./format.sh -n
