@@ -6,7 +6,7 @@ _This tool is functionally similar to [SLIP39](https://slip39.com/) but is not c
 
 ## Disclaimer
 
-**This tool has been thoroughly tested but is not audited and may not work correctly under all deployment scenarios. Use at your own risk!**
+**This tool has been not audited and may not work correctly under all deployment scenarios. Use at your own risk!**
 
 This tool is meant to be used by trusted operators. Malicious inputs to the tool are not considered in the threat model. It is also assumed that this tool will be used in a physically secure environment. The threat model does not consider shoulder surfing, eavesdropping, TEMPEST, and other side-channel attacks.
 
