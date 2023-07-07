@@ -1,7 +1,7 @@
 # Copyright (C) 2023, Ava Labs, Inc. All rights reserved.
 # See the file LICENSE for licensing terms.
 
-CXX := clang++-10
+CXX := clang++
 CXX_FLAGS := -std=c++17 -g -fno-omit-frame-pointer -Wall
 LIB_INSTALL_DIR ?=
 USR_INCLUDE ?= $(LIB_INSTALL_DIR)/usr/local/include
