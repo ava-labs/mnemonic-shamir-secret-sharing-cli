@@ -256,4 +256,7 @@ docker run -it --rm msss
 - run your commands as documented above, e.g.
 ```sh
 ./mnemonic-sss generate
+
+# or use shortcut:
+msss generate
 ```
