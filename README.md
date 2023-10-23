@@ -241,3 +241,22 @@ Please enter the first 4 characters of each word of the 24 word mnemonic phrase.
 Recovered mnemonic phrase is:
 world lawn observe spray wish kit auction focus bone view opera artefact ice mimic expand valve upgrade hour dilemma virtual bread member midnight predict
 ```
+
+### Build and run in Docker
+
+Start the docker daemon and navigate to this directory, then
+- build the Docker image once
+```sh
+docker build -t msss .
+```
+- start an interactive container
+```sh
+docker run -it --rm msss
+```
+- run your commands as documented above, e.g.
+```sh
+./mnemonic-sss generate
+
+# or use shortcut:
+msss generate
+```
