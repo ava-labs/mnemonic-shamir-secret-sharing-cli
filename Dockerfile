@@ -46,6 +46,3 @@ RUN ln -s build/mnemonic-sss m-sss
 RUN ln -s build/mnemonic-sss sss
 RUN ln -s build/mnemonic-sss msss
 ENV PATH="${PATH}:/msss/MnemonicShamirCLI"
-
-
-CMD ["bash"]
