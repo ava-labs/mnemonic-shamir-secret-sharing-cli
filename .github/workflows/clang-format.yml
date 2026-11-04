@@ -2,14 +2,20 @@ name: Check Clang Format
 
 on: push
 
+permissions: {}
+
 jobs:
   # Runs clang-format, but does not apply formatting to source.
   # Formatting violations emit errors, causing the job to fail.
   clang-format:
+    permissions:
+      contents: read
     runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        persist-credentials: false
 
     - name: Install clang-format
       run : |
