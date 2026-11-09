@@ -5,8 +5,12 @@ name: Shamir CLI Unit Tests
 
 on: push
 
+permissions: {}
+
 jobs:
   run-integration-tests:
+    permissions:
+      contents: read
     runs-on: ubuntu-20.04
 
     steps:
@@ -14,6 +18,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: mnemonic-shamir-secret-sharing-cli
+        persist-credentials: false
 
     - name: Install AWS CLI
       run: |
